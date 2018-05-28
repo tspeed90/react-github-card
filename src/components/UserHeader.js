@@ -1,7 +1,7 @@
 import React from 'react';
 import { getUserData } from '../utils/getUserData.js';
 import '../../public/style.css';
-import RepoList from "./repoList";
+import RepoList from "./RepoList";
 
 export default class UserHeader extends React.Component {
   constructor(props) {

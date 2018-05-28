@@ -21,12 +21,10 @@ export default class RepoList extends React.Component {
   }
   componentDidMount() {
     const username = "tspeed90";
-    console.log(this.props.url)
     getUserData(this.props.url).then(data => this.setState({ repoData: data }));
   }
 
   render() {
-    console.log(this.state.repoData);
     if (!this.state.repoData) {
       return <h3>...Loading</h3>;
     }
